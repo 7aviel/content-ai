@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ThemeToggle from "../theme/themeToggle";
 import { Button } from "../ui/button";
 
@@ -8,8 +9,12 @@ export default function Navbar() {
         <a href="">Icon</a>
         <div className="flex items-center gap-2 flex-wrap justify-center">
           <ThemeToggle />
-          <Button className="font-bold rounded-xl " variant={"destructive"}>
-            Get Started
+          <Button
+            className="font-bold rounded-xl "
+            variant={"destructive"}
+            asChild
+          >
+            <Link href="/dashboard">Empezar</Link>
           </Button>
         </div>
       </div>
