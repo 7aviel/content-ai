@@ -1,3 +1,4 @@
+import ThemeToggle from "@/components/themeToggle";
 import Image from "next/image";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
             >
               Templates
             </a>{" "}
+            <ThemeToggle />
             or the{" "}
             <a
               href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
